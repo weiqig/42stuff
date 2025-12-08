@@ -1,0 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wgan <marvin@42.fr>                        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/09/14 15:42:03 by wgan              #+#    #+#             */
+/*   Updated: 2025/09/14 15:42:15 by wgan             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <unistd.h>
+
+void	ft_putstr(char *str);
+
+void	ft_putstr(char *str)
+{
+	int	idx;
+
+	idx = 0;
+	while (str[idx] != '\0')
+	{
+		write(1, &str[idx], 1);
+		idx++;
+	}
+}
+
+/*int	main(void)
+{
+	char	string;
+
+	ft_putstr("Hello");
+	printf("\n");
+	ft_putstr("abcdefghijklmnopqrstuvwxyz");
+	printf("\n");
+}*/
