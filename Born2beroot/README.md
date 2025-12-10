@@ -3,15 +3,9 @@
 ## Description 
 The aim of this project is to showcase and explain how to setup a Debian virtual machine using Oracle VirtualBox to show how virtualization works through creating and configuring a VM VirtualBox, how a VM simulates hardware, CPU, RAM, storage, and networking —and how an operating system can run independently inside a host system.
 
-The process involves:
-- Installing VirtualBox and downloading a Debian ISO.
-- Creating a VM, assigning virtual resources, and selecting Debian as the guest OS.
-- Configuring virtual hardware, such as networking and storage.
-- Installing Debian inside the VM, demonstrating how the OS treats virtualized components as real hardware.
-
 The learning and evaluation outcomes include:
 - How OS installation works in a sandboxed environment
-- Better understanding of Linux Operating Systems, Security Kernels, and Firewalls
+- Better understanding of Linux Operating Systems, Security Kernels, and Firewalls (Debian, AppArmor, UFW)
 - Practical Linux administration and hands-on learning on how to navigate and interact with the VM with the related packages and tools
 - General security practices and having good password policies
 
@@ -99,7 +93,10 @@ Change password of selected user:
     passwd <username>
 Check password expiry rules:    
 
-    sudo chage -l <username>
+    sudo chage -l username
+Show root crontab jobs
+
+    sudo crontab -u root -l
 ## Resources
 The links listed in order below contains additional resources related to this project for reference:
 
