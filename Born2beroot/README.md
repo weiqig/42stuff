@@ -77,7 +77,7 @@ Check if a program is properly installed in the VM:
 
     dpkg -l | grep <program>
 Check partitions for your VM:
-    
+
     lsblk
 Add a new user:
 
@@ -97,6 +97,9 @@ Modify the hostname:
 Change password of selected user:
 
     passwd <username>
+Check password expiry rules:    
+
+    sudo chage -l <username>
 ## Resources
 The links listed in order below contains additional resources related to this project for reference:
 
